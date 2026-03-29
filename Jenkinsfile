@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'maven-agent' }
+    agent { label 'slave' }
 
     environment {
         APP_SERVER = "<APP_SERVER_IP>"
