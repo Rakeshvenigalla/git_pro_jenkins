@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <h1 class="game-title">☆ SPACE INVADERS ☆</h1>
+
+    <!-- HUD -->
+    <div class="hud">
+        <div class="hud-block">
+            <span class="hud-label">SCORE</span>
+            <span class="hud-value" id="score">0</span>
+        </div>
+        <div class="hud-block">
+            <span class="hud-label">LIVES</span>
+            <span class="hud-value" id="lives">♥♥♥</span>
+        </div>
+        <div class="hud-block">
+            <span class="hud-label">LEVEL</span>
+            <span class="hud-value" id="level">1</span>
+        </div>
+    </div>
+
+    <!-- Game Canvas -->
+    <div class="canvas-wrapper">
+        <canvas id="gameCanvas" width="600" height="500"></canvas>
+    </div>
+
+    <!-- Mobile / Keyboard Controls -->
+    <div class="controls">
+        <button class="btn" id="btnLeft">◀ LEFT</button>
+        <button class="btn btn-fire" id="btnFire">▲ FIRE</button>
+        <button class="btn" id="btnRight">RIGHT ▶</button>
+    </div>
+    <p class="ctrl-hint">Keyboard: ← → to move &nbsp;|&nbsp; SPACE to fire &nbsp;|&nbsp; P to pause</p>
+
+    <!-- Alien Legend -->
+    <div class="legend">
+        <div class="legend-item"><span class="legend-block" style="background:#ff6b6b;"></span> SQUID = 30 pts</div>
+        <div class="legend-item"><span class="legend-block" style="background:#ffd93d;"></span> CRAB  = 20 pts</div>
+        <div class="legend-item"><span class="legend-block" style="background:#6bcb77;"></span> OCTO  = 10 pts</div>
+    </div>
+
+    <!-- Leaderboard -->
+    <div class="leaderboard">
+        <h3>🏆 LEADERBOARD</h3>
+        <div id="leaderboard">
+            <div class="leaderboard-empty">No scores yet. Play to be first!</div>
+        </div>
+    </div>
+
+    <script src="static/js/game.js"></script>
+</body>
+</html>
